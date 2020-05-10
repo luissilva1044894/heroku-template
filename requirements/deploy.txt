@@ -1,0 +1,7 @@
+
+# Everything needed in production
+
+# https://github.com/benoitc/gunicorn
+gunicorn==20.0.4
+
+-r flask.txt

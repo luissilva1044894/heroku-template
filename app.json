@@ -1,0 +1,16 @@
+{
+  "buildpacks":[
+    {
+      "url":"https://github.com/heroku/heroku-buildpack-python"
+    }
+  ],
+  "description":"Boilerplate for a Python script, deploy easily on heroku",
+  "image":"heroku/python",
+  "logo":"",
+  "keywords":[
+    "python",
+    "heroku"
+  ],
+  "name":"ptyhon-script-heroku-template",
+  "repository":"https://github.com/luissilva1044894/heroku-template/tree/python-script",
+}

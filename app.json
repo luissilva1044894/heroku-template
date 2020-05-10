@@ -1,0 +1,31 @@
+{
+  "addons":[
+    {
+      "plan":"heroku-postgresql:hobby-dev"
+    }
+  ],
+  "buildpacks":[
+    {
+      "url":"https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url":"https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "env":{
+    "DISCORD_BOT_TOKEN":{
+      "description":"Used by discord.py connecting to Discord. This is the bot’s token that you receive from Discord.",
+      "required":"true",
+      "value":""
+    }
+  },
+  "description":"Boilerplate for a discord.py, deploy easily on Heroku",
+  "image":"heroku/python",
+  "logo":"",
+  "keywords":[
+    "discord.py",
+    "heroku"
+  ],
+  "name":"discord.py-heroku-template",
+  "repository":"https://github.com/luissilva1044894/heroku-template/tree/discord.py"
+}

@@ -1,0 +1,25 @@
+{
+  "addons":[
+    {
+      "plan":"heroku-postgresql:hobby-dev"
+    }
+  ],
+  "buildpacks":[
+    {
+      "url":"https://github.com/heroku/heroku-buildpack-nodejs"
+    },
+    {
+      "url":"https://github.com/heroku/nodejs-npm-buildpack"
+    }
+  ],
+  "description":"Boilerplate for a Node.js based app, deploy easily on Heroku",
+  "image":"heroku/node-js",
+  "logo":"https://nodejs.org/static/images/logo.svg",
+  "keywords":[
+    "node-js",
+    "heroku"
+  ],
+  "name":"node-js-minimal-heroku-template",
+  "repository":"https://github.com/luissilva1044894/heroku-template/tree/node.js-minimal",
+  "success_url":"/"
+}

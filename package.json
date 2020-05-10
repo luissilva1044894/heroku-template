@@ -1,0 +1,22 @@
+{
+  "author": "",
+  "description": "Boilerplate for a Node.js app, deploy easily on Heroku",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "keywords": [
+    "heroku, node"
+  ],
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "name": "node-js-minimal-heroku-template",
+  "version": "1.0.0"
+}

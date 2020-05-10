@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 
 {% block body %}
-  <p>Hello, world!</p>
+  {% if name %}
+  <p>Hello, {{ name }}!</p>
+  {% else %}
+  <p>Hello, Guest!</p>
 
-  <p>Current year: {{current_year}}</p>
+  {% endif %}
+  <p>Current year: {{ current_year }}</p>
+
 {% endblock %}

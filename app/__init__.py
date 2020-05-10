@@ -9,21 +9,29 @@ app = Flask(__name__, static_folder='static', template_folder='templates', stati
 
 @app.context_processor
 def utility_processor():
-    return { 'current_time': datetime.now(), 'current_year': datetime.utcnow().year}
+    return { 'current_year': datetime.utcnow().year }
 
 # Sample main page
 @app.route('/')
 def home():
     return render_template('index.html')
 
-@app.route('/hello', methods=['GET'])
+@app.route('/<name>', methods=['GET'])
+def hello_someone(name):
+    return render_template('index.html', name=name.title())
+
+@app.route('/hello')
 def hello():
-    return "Hello, World!"
+    return 'Hello, World!'
 
 # Sample setup script
 @app.route('/setup/', strict_slashes=False)
 def setup_route():
-    return jsonify(worked=True, msg='It worked!')
+    data = {
+        'worked': True,
+        'msg': 'It worked!'
+    }
+    return jsonify(data)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))

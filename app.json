@@ -19,11 +19,12 @@
       "value":"prod"
     }
   },
-  "description":"Boilerplate for a flask based app, deploy easily on heroku",
+  "description":"Boilerplate for a Flask based app, deploy easily on Heroku",
   "image":"heroku/python",
   "logo":"",
   "keywords":[
     "flask",
+    "python",
     "heroku"
   ],
   "name":"flask-heroku-template",

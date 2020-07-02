@@ -2,7 +2,7 @@
 # Everything needed in production
 
 # https://gitlab.com/pgjones/hypercorn
-hypercorn==0.9.5
+Hypercorn==0.10.1
 
 # https://github.com/encode/uvicorn
 uvicorn==0.11.5

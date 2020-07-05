@@ -24,7 +24,7 @@
       "value":"!"
     },
     "DISCORD_BOT_TOKEN":{
-      "description":"Used by discord.py connecting to Discord. This is the bot’s token that you receive from Discord.",
+      "description":"Used by discord.js connecting to Discord. This is the bot’s token that you receive from Discord.",
       "required":"true",
       "value":""
     }
@@ -33,8 +33,9 @@
   "image":"heroku/node-js",
   "logo":"https://discord.js.org/static/logo.svg",
   "keywords":[
-    "node-js",
-    "heroku"
+    "discord",
+    "heroku",
+    "node-js"
   ],
   "name":"discord-js-minimal-heroku-template",
   "repository":"https://github.com/luissilva1044894/heroku-template/tree/discord.js-minimal",

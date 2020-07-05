@@ -17,9 +17,9 @@
     "npm": "*"
   },
   "keywords":[
+    "discord",
     "heroku",
-    "node",
-    "discord"
+    "node-js"
   ],
   "license":"MIT",
   "main":"discord_bot.js",

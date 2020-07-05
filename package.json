@@ -1,0 +1,28 @@
+{
+  "author":"",
+  "description":"Boilerplate for a Node.js Discord bot, deploy easily on Heroku",
+  "devDependencies":{
+    "bufferutil":"^4.0.1",
+    "discord.js":"^12.2.0",
+    "@discordjs/opus":"^0.3.2",
+    "libsodium-wrappers":"^0.7.6",
+    "nodemon":"^2.0.4",
+    "utf-8-validate":"^5.0.2",
+    "zlib-sync":"^0.1.7"
+  },
+  "engines":{
+    "node":"12.x"
+  },
+  "keywords":[
+    "heroku, node, discord"
+  ],
+  "license":"MIT",
+  "main":"discord_bot.js",
+  "scripts":{
+    "dev":"nodemon discord_bot.js",
+    "start":"node discord_bot.js",
+    "test":"echo \"Error: no test specified\" && exit 1"
+  },
+  "name":"discord-js-minimal-heroku-template",
+  "version":"1.0.0"
+}

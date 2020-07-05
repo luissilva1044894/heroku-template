@@ -13,6 +13,16 @@
     }
   ],
   "env":{
+    "DISCORD_BOT_INVITE":{
+      "description":"",
+      "required":"true",
+      "value":""
+    },
+    "DISCORD_BOT_PREFIX":{
+      "description":"",
+      "required":"true",
+      "value":"!"
+    },
     "DISCORD_BOT_TOKEN":{
       "description":"Used by discord.py connecting to Discord. This is the bot’s token that you receive from Discord.",
       "required":"true",

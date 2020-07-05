@@ -19,7 +19,7 @@
       "value":""
     },
     "DISCORD_BOT_PREFIX":{
-      "description":"",
+      "description":"The prefix you want to use with the bot.",
       "required":"true",
       "value":"!"
     },
@@ -29,9 +29,9 @@
       "value":""
     }
   },
-  "description":"Boilerplate for a Node.js Discord bot, deploy easily on Heroku",
+  "description":"Boilerplate for a Node.js Discord Bot, deploy easily on Heroku",
   "image":"heroku/node-js",
-  "logo":"https://nodejs.org/static/images/logo.svg",
+  "logo":"https://discord.js.org/static/logo.svg",
   "keywords":[
     "node-js",
     "heroku"

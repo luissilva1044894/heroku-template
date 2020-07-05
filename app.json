@@ -39,7 +39,7 @@
   "keywords":[
     "discord",
     "heroku",
-    "node-js"
+    "node-js",
     "youtube"
   ],
   "name":"discord-js-music-heroku-template",

@@ -16,7 +16,7 @@ bot.on('message', msg => {
   if (command === 'ping') {
     msg.reply('Pong!');
   } else if (command === 'invite') {
-  	msg.reply(process.env.DISCORD_BOT_INVITE);
+  	msg.reply(`https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot`);
   }
 });
 

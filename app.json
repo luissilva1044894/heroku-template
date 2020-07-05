@@ -27,17 +27,22 @@
       "description":"Used by discord.js connecting to Discord. This is the bot’s token that you receive from Discord.",
       "required":"true",
       "value":""
+    },
+    "YOUTUBE_TOKEN":{
+      "description":"Used by discord.js-musicbot-addon connecting to Youtube APIs.",
+      "required":"true"
     }
   },
-  "description":"Boilerplate for a Node.js Discord Bot, deploy easily on Heroku",
+  "description":"Boilerplate for a Node.js Music Discord Bot, deploy easily on Heroku",
   "image":"heroku/node-js",
   "logo":"https://discord.js.org/static/logo.svg",
   "keywords":[
     "discord",
     "heroku",
     "node-js"
+    "youtube"
   ],
-  "name":"discord-js-minimal-heroku-template",
-  "repository":"https://github.com/luissilva1044894/heroku-template/tree/discord.js-minimal",
+  "name":"discord-js-music-heroku-template",
+  "repository":"https://github.com/luissilva1044894/heroku-template/tree/discord.js-music",
   "success_url":"/"
 }

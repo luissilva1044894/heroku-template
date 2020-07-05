@@ -3,6 +3,13 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const bot_prefix = process.env.DISCORD_BOT_PREFIX || '!';
 
+bot.music = require('discord.js-musicbot-addon');
+
+bot.music.start(bot, {
+  youtubeKey: process.env.YOUTUBE_TOKEN,
+  botPrefix: bot_prefix
+});
+
 bot.on('ready', () => {
   console.log(`Logged in as ${bot.user.tag}!`);
   bot.user.setActivity(`${bot.user.username} is Deployed on Heroku!`, {type: 'PLAYING'});

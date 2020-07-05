@@ -1,25 +1,29 @@
 {
   "author":"",
-  "description":"Boilerplate for a Node.js Discord bot, deploy easily on Heroku",
+  "description":"Boilerplate for a Node.js Music Discord Bot, deploy easily on Heroku",
   "devDependencies":{
     "nodemon":"^2.0.4"
   },
   "dependencies":{
     "bufferutil":"^4.0.1",
-    "discord.js":"^12.2.0",
     "@discordjs/opus":"^0.3.2",
+    "discord.js":"^12.2.0",
+    "discord.js-musicbot-addon":"13.9.1",
     "libsodium-wrappers":"^0.7.6",
+    "node-fetch":"2.6.0",
+    "node-opus":"^0.3.3",
     "utf-8-validate":"^5.0.2",
     "zlib-sync":"^0.1.7"
   },
   "engines":{
     "node":"12.x",
-    "npm": "*"
+    "npm":"*"
   },
   "keywords":[
     "discord",
+    "node-js",
     "heroku",
-    "node-js"
+    "youtube"
   ],
   "license":"MIT",
   "main":"discord_bot.js",
@@ -28,6 +32,6 @@
     "start":"node discord_bot.js",
     "test":"echo \"Error: no test specified\" && exit 1"
   },
-  "name":"discord-js-minimal-heroku-template",
+  "name":"discord-js-music-heroku-template",
   "version":"1.0.0"
 }

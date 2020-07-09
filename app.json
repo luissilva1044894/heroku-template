@@ -17,6 +17,16 @@
     "FLASK_ENV":{
       "description":"Environment variable that determines the flask configuration - namely where to get postgres db url",
       "value":"prod"
+    },
+    "TWILIO_ACCOUNT_SID":{
+      "description":"Your Account Sid from twilio.com/console",
+      "required":"true",
+      "value":""
+    },
+    "TWILIO_AUTH_TOKEN":{
+      "description":"Your Auth Token from twilio.com/console",
+      "required":"true",
+      "value":""
     }
   },
   "description":"Boilerplate for a Flask based app, deploy easily on Heroku",

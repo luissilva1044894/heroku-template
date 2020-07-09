@@ -60,7 +60,7 @@ def setup_route():
     }
     return jsonify(data)
 
-@app.route('/voice/', methods=['POST'], strict_slashes=False)
+@app.route('/voice/', methods=['POST', 'PUT'], strict_slashes=False)
 @validate_twilio_request
 def incoming_call():
     """Twilio Voice URL - receives incoming calls from Twilio"""
@@ -69,7 +69,7 @@ def incoming_call():
     resp = Response()
 
     # <Say> a message to the caller
-    from_number = request.values['From']
+    from_number = request.form.get('From')
     body = """
     Thanks for calling!
 
@@ -81,7 +81,12 @@ def incoming_call():
     # Return the TwiML
     return str(resp)
 
-@app.route('/message/', methods=['POST'], strict_slashes=False)
+@app.route('/status/', methods=['POST', 'PUT'], strict_slashes=False)
+@validate_twilio_request
+def incoming_status():
+    print(request.form)
+
+@app.route('/message/', methods=['POST', 'PUT'], strict_slashes=False)
 @validate_twilio_request
 def incoming_message():
     """Twilio Messaging URL - Respond to incoming messages from Twilio with a simple text message"""
@@ -95,7 +100,7 @@ def incoming_message():
     # retrieve incoming message from POST request
     incoming_msg = request.form.get('Body')
 
-    msg.body(f"Your text to me was {incoming_msg} characters long. Webhooks are neat :)")
+    msg.body(f"Your text to me was {len(incoming_msg)} characters long. Webhooks are neat :)")
     msg.media('https://twilio-cms-prod.s3.amazonaws.com/images/twilio-logo-red.width-640.png')
 
     # Return the TwiML

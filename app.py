@@ -93,7 +93,7 @@ def incoming_message():
     msg = resp.message()
 
     # retrieve incoming message from POST request
-    incoming_msg = request.POST['Body']
+    incoming_msg = request.form.get('Body')
 
     msg.body(f"Your text to me was {incoming_msg} characters long. Webhooks are neat :)")
     msg.media('https://twilio-cms-prod.s3.amazonaws.com/images/twilio-logo-red.width-640.png')

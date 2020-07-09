@@ -28,14 +28,14 @@ def setup_route():
     }
     return jsonify(data)
 
-@app.route('/sms/', methods=['POST'], strict_slashes=False)
-def sms_reply():
+@app.route('/reply/', methods=['POST'], strict_slashes=False)
+def reply_route():
     """Respond to incoming calls with a simple text message."""
 
     msg = request.form.get('Body')
 
     resp = MessagingResponse()
-    resp.message(f'You said: {msg}')
+    resp.message(f'Your message: {msg}')
 
     return resp.to_xml()
 

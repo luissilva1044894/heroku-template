@@ -5,3 +5,4 @@
 gunicorn==20.0.4
 
 -r flask.txt
+-r twilio.txt

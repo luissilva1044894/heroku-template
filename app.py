@@ -4,6 +4,7 @@
 import os
 
 from flask import Flask, jsonify, request
+from twilio.twiml.messaging_response import MessagingResponse
 
 app = Flask(__name__)
 
@@ -26,6 +27,17 @@ def setup_route():
         'msg': 'It worked!'
     }
     return jsonify(data)
+
+@app.route('/sms/', methods=['POST'], strict_slashes=False)
+def sms_reply():
+    """Respond to incoming calls with a simple text message."""
+
+    msg = request.form.get('Body')
+
+    resp = MessagingResponse()
+    resp.message(f'You said: {msg}')
+
+    return resp.to_xml()
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))

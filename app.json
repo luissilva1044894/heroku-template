@@ -18,15 +18,25 @@
       "description":"Environment variable that determines the flask configuration - namely where to get postgres db url",
       "value":"prod"
     },
+    "TWILIO_JOIN_CODE":{
+      "description":"",
+      "required":"true",
+      "value":""
+    },
     "TWILIO_ACCOUNT_SID":{
-      "description":"Your Account Sid from twilio.com/console",
+      "description":"Your Account Sid from https://www.twilio.com/console",
       "required":"true",
       "value":""
     },
     "TWILIO_AUTH_TOKEN":{
-      "description":"Your Auth Token from twilio.com/console",
+      "description":"Your Auth Token from https://www.twilio.com/console",
       "required":"true",
       "value":""
+    },
+    "TWILIO_WHATSAPP_NUMBER":{
+      "description":"Twilio Sandbox WhatsApp number from https://www.twilio.com/console/sms/whatsapp/sandbox",
+      "required":"true",
+      "value":"+14155238886"
     }
   },
   "description":"Boilerplate for a Flask based app, deploy easily on Heroku",

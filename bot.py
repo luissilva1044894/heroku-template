@@ -16,6 +16,8 @@ finally:
 import discord
 from discord.ext.commands import Bot
 
+import music
+
 bot = Bot(command_prefix='!', pm_help=False)
 
 @bot.event
@@ -30,6 +32,8 @@ async def on_ready():
     print(f'Logged in as: {bot.user.name} (ID:{bot.user.id}) | Connected to {len(bot.guilds)} servers | Connected to {len(set(bot.get_all_members()))} users')
     print(f'Successfully logged in and booted...!')
     print('=' * 75, end='\n\n')
+
+    music.setup(bot)
 
     await bot.change_presence(activity=discord.Game(name='PyCharm'), status=discord.Status('dnd'))
 

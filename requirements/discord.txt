@@ -21,3 +21,4 @@ uvloop==0.14.0;platform_system!='Windows' and sys_platform != 'cygwin' and imple
 websockets==8.1;python_version>='3.6.1'
 
 -r pil.txt
+-r yt.txt

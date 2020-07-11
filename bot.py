@@ -4,6 +4,15 @@
 from os import environ
 from traceback import TracebackException
 
+try:
+	from dotenv import load_dotenv
+except ImportError:
+	pass
+else:
+	load_dotenv()
+finally:
+	token = environ.get('DISCORD_BOT_TOKEN')
+
 import discord
 from discord.ext.commands import Bot
 
@@ -19,7 +28,7 @@ async def on_command_error(ctx, error):
 async def on_ready():
     print('=' * 75, end='\n\n')
     print(f'Logged in as: {bot.user.name} (ID:{bot.user.id}) | Connected to {len(bot.guilds)} servers | Connected to {len(set(bot.get_all_members()))} users')
-    print(f'https://discordapp.com/oauth2/authorize?client_id={bot.user.name}&scope=bot&permissions=8')
+    print(f'https://discordapp.com/oauth2/authorize?client_id={bot.user.id}&scope=bot&permissions=8')
     print(f'Successfully logged in and booted...!')
     print('=' * 75, end='\n\n')
 
@@ -29,4 +38,4 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send('pong')
 
-bot.run(environ.get('DISCORD_BOT_TOKEN'))
+bot.run(token)

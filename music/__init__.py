@@ -85,7 +85,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
     loop = loop or asyncio.get_event_loop()
     data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=not stream))
     data1 = {'queue':[]}
-    if 'entries' in data:
+    if data and 'entries' in data:
       if len(data['entries']) > 1:
         playlist_titles = [title['title'] for title in data['entries']]
         data1 = {'title':data['title'], 'queue':playlist_titles}
@@ -100,7 +100,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
     yt = youtube_dl.YoutubeDL(stim)
     down = yt.extract_info(url,download=False)
     data1 = {'queue':[]}
-    if 'entries' in down:
+    if data and 'entries' in down:
       if len(down['entries']) > 1:
         playlist_titles = [title['title'] for title in down['entries']]
         data1 = {'title':down['title'], 'queue':playlist_titles}
@@ -114,7 +114,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
 
     data = await loop.run_in_executor(None, partial(ytdl.extract_info, url=search, download=download))
 
-    if 'entries' in data:
+    if data and 'entries' in data:
       # take first item from a playlist
       data = data['entries']
       if data and isinstance(data, (tuple, list)) and len(data) > 0:
@@ -191,8 +191,7 @@ class MusicPlayer:
             self.current = source
 
             self._guild.voice_client.play(source, after=lambda _: self.bot.loop.call_soon_threadsafe(self.next.set))
-            self.np = await self._channel.send(f'**Now Playing:** `{source.title}` requested by '
-                                               f'`{source.requester}`')
+            self.np = await self._channel.send(f'**Now Playing:** `{source.title}` requested by `{source.requester}`')
             await self.next.wait()
 
             # Make sure the FFmpeg process is cleaned up.

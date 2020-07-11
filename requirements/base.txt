@@ -1,8 +1,0 @@
-
-# Base requirements
-
-# https://github.com/Tinche/aiofiles
-aiofiles>=0.5.0
-
-# https://github.com/aio-libs/aiohttp
-aiohttp>=2.3.0,<4

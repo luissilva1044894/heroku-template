@@ -26,6 +26,6 @@
     "discord.py",
     "heroku"
   ],
-  "name":"discord.py-heroku-template",
-  "repository":"https://github.com/luissilva1044894/heroku-template/tree/discord.py"
+  "name":"discord.py-minimal-heroku-template",
+  "repository":"https://github.com/luissilva1044894/heroku-template/tree/discord.py-minimal"
 }

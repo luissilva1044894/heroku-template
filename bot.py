@@ -16,6 +16,15 @@ finally:
 import discord
 from discord.ext.commands import Bot
 
+if not discord.opus.is_loaded():
+    # The 'opus' library here is opus.dll on windows or libopus.so on linux in the current directory
+    # you should replace this with the location the opus library is located in and with the proper filename.
+    # Note that on windows this DLL is automatically provided for you.
+    try:
+        discord.opus.load_opus('opus')
+    except OSError:
+        pass
+
 import music
 
 bot = Bot(command_prefix='!', pm_help=False)

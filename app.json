@@ -9,6 +9,7 @@
       "url":"https://github.com/heroku/heroku-buildpack-python"
     }
   ],
+  "description":"Boilerplate for a discord.py, deploy easily on Heroku",
   "env":{
     "DISCORD_BOT_TOKEN":{
       "description":"Used by discord.py connecting to Discord. This is the bot’s token that you receive from Discord.",
@@ -16,13 +17,18 @@
       "value":""
     }
   },
-  "description":"Boilerplate for a discord.py, deploy easily on Heroku",
+  "formation": {
+    "bot": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
   "image":"heroku/python",
-  "logo":"",
   "keywords":[
     "discord.py",
     "heroku"
   ],
+  "logo":"",
   "name":"discord.py-minimal-heroku-template",
   "repository":"https://github.com/luissilva1044894/heroku-template/tree/discord.py-minimal"
 }

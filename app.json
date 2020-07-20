@@ -15,6 +15,11 @@
       "description":"Used by discord.py connecting to Discord. This is the bot’s token that you receive from Discord.",
       "required":"true",
       "value":""
+    },
+    "DISCORD_COMMAND_PREFIX":{
+      "description":"",
+      "required":"true",
+      "value":"!"
     }
   },
   "formation": {

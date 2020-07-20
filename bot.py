@@ -4,6 +4,9 @@
 from os import environ
 from traceback import TracebackException
 
+import discord
+from discord.ext.commands import Bot
+
 try:
 	from dotenv import load_dotenv
 except ImportError:
@@ -13,10 +16,9 @@ else:
 finally:
 	token = environ.get('DISCORD_BOT_TOKEN')
 
-import discord
-from discord.ext.commands import Bot
+command_prefix = environ.get('DISCORD_COMMAND_PREFIX') or '!'
 
-bot = Bot(command_prefix='!', pm_help=False)
+bot = Bot(command_prefix=command_prefix, pm_help=False)
 
 @bot.event
 async def on_command_error(ctx, error):

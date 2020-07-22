@@ -33,7 +33,7 @@ async def on_ready():
     print(f'Successfully logged in and booted...!')
     print('=' * 75, end='\n\n')
 
-    await bot.change_presence(activity=discord.Game(name='PyCharm'), status=discord.Status('dnd'))
+    await bot.change_presence(activity=discord.Game(name=f'{bot.user.name} is Deployed on Heroku!'), status=discord.Status('dnd'))
 
 @bot.command()
 async def ping(ctx):

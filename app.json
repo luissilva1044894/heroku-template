@@ -5,12 +5,18 @@
     }
   ],
   "description":"Boilerplate for a Python script, deploy easily on heroku",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
   "image":"heroku/python",
-  "logo":"",
   "keywords":[
     "python",
     "heroku"
   ],
+  "logo":"",
   "name":"ptyhon-script-heroku-template",
   "repository":"https://github.com/luissilva1044894/heroku-template/tree/python-script"
 }

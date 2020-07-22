@@ -23,6 +23,12 @@
     }
   },
   "description":"Boilerplate for a discord.py, deploy easily on Heroku",
+  "formation": {
+    "bot": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
   "image":"heroku/python",
   "logo":"",
   "keywords":[

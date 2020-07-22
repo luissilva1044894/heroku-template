@@ -9,7 +9,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message', msg => {
-	if (!msg.content.startsWith(bot_prefix))
+  if (!msg.content.startsWith(bot_prefix))
     return;
   const command = msg.content.split(' ')[0].substr(bot_prefix.length);
   const args = msg.content.split(' ').slice(1).join(' ');

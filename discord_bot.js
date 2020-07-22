@@ -16,14 +16,14 @@ bot.on('ready', () => {
 });
 
 bot.on('message', msg => {
-	if (!msg.content.startsWith(bot_prefix))
-		return;
+  if (!msg.content.startsWith(bot_prefix))
+    return;
   const command = msg.content.split(' ')[0].substr(bot_prefix.length);
   const args = msg.content.split(' ').slice(1).join(' ');
   if (command === 'ping') {
     msg.reply('Pong!');
   } else if (command === 'invite') {
-  	msg.reply(process.env.DISCORD_BOT_INVITE);
+    msg.reply(process.env.DISCORD_BOT_INVITE);
   }
 });
 

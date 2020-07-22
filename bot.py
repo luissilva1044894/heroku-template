@@ -44,7 +44,7 @@ async def on_ready():
 
     music.setup(bot)
 
-    await bot.change_presence(activity=discord.Game(name='PyCharm'), status=discord.Status('dnd'))
+    await bot.change_presence(activity=discord.Game(name=f'{bot.user.name} is Deployed on Heroku!'), status=discord.Status('dnd'))
 
 @bot.command()
 async def ping(ctx):

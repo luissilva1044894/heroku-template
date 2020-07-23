@@ -41,7 +41,7 @@
   },
   "description":"Boilerplate for a Flask based app, deploy easily on Heroku",
   "image":"heroku/python",
-  "logo":"",
+  "logo":"https://twilio-cms-prod.s3.amazonaws.com/images/twilio-logo-red.width-640.png",
   "keywords":[
     "flask",
     "python",

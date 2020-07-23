@@ -17,7 +17,7 @@
   },
   "description":"Boilerplate for a Django based app, deploy easily on Heroku",
   "image":"heroku/python",
-  "logo":"",
+  "logo":"https://raw.githubusercontent.com/django/djangoproject.com/master/djangoproject/static/img/logos/django-logo-negative-grayscale.png",
   "keywords":[
     "django",
     "python",

@@ -21,7 +21,7 @@
   },
   "description":"Boilerplate for a Flask based app, deploy easily on Heroku",
   "image":"heroku/python",
-  "logo":"",
+  "logo":"https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png",
   "keywords":[
     "flask",
     "python",

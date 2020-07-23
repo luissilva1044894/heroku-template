@@ -33,7 +33,7 @@
     "discord.py",
     "heroku"
   ],
-  "logo":"",
+  "logo":"https://discordpy.readthedocs.io/en/latest/_images/snake.png",
   "name":"discord.py-minimal-heroku-template",
   "repository":"https://github.com/luissilva1044894/heroku-template/tree/discord.py-minimal"
 }

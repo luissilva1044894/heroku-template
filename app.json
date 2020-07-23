@@ -30,7 +30,7 @@
     }
   },
   "image":"heroku/python",
-  "logo":"",
+  "logo":"https://discordpy.readthedocs.io/en/latest/_images/snake.png",
   "keywords":[
     "discord.py",
     "heroku"

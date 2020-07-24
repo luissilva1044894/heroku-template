@@ -23,6 +23,7 @@ finally:
   prefix = environ.get('TWITCH_BOT_PREFIX') or '!'
   if nick not in initial_channels:
     initial_channels.append(nick)
+  #api_token = environ.get('TWITCH_API_TOKEN')
 
 class Bot(commands.Bot):
   def __init__(self, nick, irc_token, client_id=None, prefix=None, initial_channels=[], initial_extensions=[]):

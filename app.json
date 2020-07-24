@@ -1,10 +1,15 @@
 {
+  "addons":[
+    {
+      "plan":"heroku-postgresql:hobby-dev"
+    }
+  ],
   "buildpacks":[
     {
       "url":"https://github.com/heroku/heroku-buildpack-python"
     }
   ],
-  "description":"Boilerplate for a Twitchio Bot, deploy easily on heroku",
+  "description":"Boilerplate for a twitchio bot, deploy easily on Heroku.",
   "env":{
     "TWITCH_BOT_PREFIX":{
       "description":"",
@@ -17,7 +22,9 @@
       "value":""
     },
     "TWITCH_INICIAL_CHANNELS":{
-      "description":""
+      "description":"",
+      "required":"true",
+      "value":""
     },
     "TWITCH_IRC_TOKEN":{
       "description":"",
@@ -38,8 +45,9 @@
   },
   "image":"heroku/python",
   "keywords":[
+    "heroku",
     "python",
-    "heroku"
+    "twitchio"
   ],
   "logo":"https://twitchio.readthedocs.io/en/rewrite/_static/logo.png",
   "name":"ptyhon-twitchio-heroku-template",

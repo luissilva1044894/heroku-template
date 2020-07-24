@@ -1,0 +1,9 @@
+
+# https://github.com/Tinche/aiofiles
+aiofiles>=0.5.0;python_version>='3.6.1'
+
+# https://github.com/TwitchIO/Twitchio
+twitchio==1.1.0;python_version>='3.6.1'
+
+-r aiohttp.txt
+-r websockets.txt

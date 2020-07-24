@@ -4,7 +4,32 @@
       "url":"https://github.com/heroku/heroku-buildpack-python"
     }
   ],
-  "description":"Boilerplate for a Python script, deploy easily on heroku",
+  "description":"Boilerplate for a Twitchio Bot, deploy easily on heroku",
+  "env":{
+    "TWITCH_BOT_PREFIX":{
+      "description":"",
+      "required":"true",
+      "value":"!"
+    },
+    "TWITCH_CLIENT_ID":{
+      "description":"",
+      "required":"true",
+      "value":""
+    },
+    "TWITCH_INICIAL_CHANNELS":{
+      "description":""
+    },
+    "TWITCH_IRC_TOKEN":{
+      "description":"",
+      "required":"true",
+      "value":""
+    },
+    "TWITCH_NICK":{
+      "description":"",
+      "required":"true",
+      "value":""
+    }
+  },
   "formation": {
     "worker": {
       "quantity": 1,
@@ -16,7 +41,7 @@
     "python",
     "heroku"
   ],
-  "logo":"https://www.python.org/static/img/python-logo.png",
-  "name":"ptyhon-script-heroku-template",
-  "repository":"https://github.com/luissilva1044894/heroku-template/tree/python-script"
+  "logo":"https://twitchio.readthedocs.io/en/rewrite/_static/logo.png",
+  "name":"ptyhon-twitchio-heroku-template",
+  "repository":"https://github.com/luissilva1044894/heroku-template/tree/ptyhon-twitchio"
 }

@@ -8,7 +8,7 @@ arrow==0.17.0;python_version>='3.6.1'
 boolify==0.0.4.dev0;python_version>='3.6.1'
 
 # https://github.com/tartley/colorama
-colorama>=0.4.3;python_version>='3.6.1' and os_name=='nt'
+colorama>=0.4.4;python_version>='3.6.1' and os_name=='nt'
 
 # https://github.com/giampaolo/psutil
 psutil==5.7.2;python_version>='3.6.1'

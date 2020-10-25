@@ -11,7 +11,7 @@ boolify==0.0.4.dev0;python_version>='3.6.1'
 colorama>=0.4.4;python_version>='3.6.1' and os_name=='nt'
 
 # https://github.com/giampaolo/psutil
-psutil==5.7.2;python_version>='3.6.1'
+psutil==5.7.3;python_version>='3.6.1'
 
 -r dotenv.txt
 -r requests.txt

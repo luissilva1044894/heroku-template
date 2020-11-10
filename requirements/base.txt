@@ -2,4 +2,4 @@
 # Base requirements
 
 # https://github.com/Tinche/aiofiles
-aiofiles==0.5.0
+aiofiles==0.6.0

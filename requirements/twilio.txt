@@ -1,5 +1,5 @@
 
 # https://github.com/twilio/twilio-python/
-twilio==6.46.0
+twilio==6.47.0
 
 -r base.txt

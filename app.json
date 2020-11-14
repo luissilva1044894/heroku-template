@@ -24,6 +24,7 @@
     "heroku"
   ],
   "name":"quart-minimal-heroku-template",
+  "postdeploy":"python -c 'from app import db; db.create_all()'",
   "repository":"https://github.com/luissilva1044894/heroku-template/tree/quart-minimal",
   "success_url":"/setup"
 }

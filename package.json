@@ -5,7 +5,7 @@
     "nodemon": "^2.0.4"
   },
   "engines": {
-    "node": "14.x"
+    "node": "15.x"
   },
   "keywords": [
     "heroku, node"

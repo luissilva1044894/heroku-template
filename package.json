@@ -2,7 +2,7 @@
   "author":"",
   "description":"Boilerplate for a Node.js Discord bot, deploy easily on Heroku",
   "devDependencies":{
-    "nodemon":"^2.0.4"
+    "nodemon":"^2.0.6"
   },
   "dependencies":{
     "bufferutil":"^4.0.1",

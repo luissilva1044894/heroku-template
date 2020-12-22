@@ -2,7 +2,7 @@
 # Base requirements
 
 # https://github.com/psf/requests
-requests==2.25.0
+requests==2.25.1
 
 # https://github.com/urllib3/urllib3
 urllib3==1.26.2

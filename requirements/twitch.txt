@@ -3,7 +3,7 @@
 aiofiles>=0.6.0;python_version>='3.6.1'
 
 # https://github.com/TwitchIO/Twitchio
-twitchio==1.1.0;python_version>='3.6.1'
+twitchio==1.2.1;python_version>='3.6.1'
 
 -r aiohttp.txt
 -r websockets.txt

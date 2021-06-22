@@ -5,4 +5,4 @@
 requests>=2.0,<3;python_version>='3.6.1'
 
 # https://github.com/urllib3/urllib3
-urllib3==1.26.3;python_version>='3.6.1'
+urllib3==1.26.5;python_version>='3.6.1'

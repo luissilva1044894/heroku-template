@@ -1,7 +1,7 @@
 
 ## Quart
 # https://gitlab.com/pgjones/quart
-Quart[dotenv]==0.14.1
+Quart[dotenv]==0.15.1
 
 # https://github.com/pallets/jinja
 Jinja2==2.11.2

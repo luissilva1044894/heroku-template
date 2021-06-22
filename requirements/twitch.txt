@@ -1,6 +1,6 @@
 
 # https://github.com/Tinche/aiofiles
-aiofiles>=0.6.0;python_version>='3.6.1'
+aiofiles>=0.7.0;python_version>='3.6.1'
 
 # https://github.com/TwitchIO/Twitchio
 twitchio==1.2.1;python_version>='3.6.1'

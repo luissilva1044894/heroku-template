@@ -2,7 +2,7 @@
 # Everything needed in production
 
 # https://github.com/benoitc/gunicorn
-gunicorn==20.0.4
+gunicorn==20.1.0
 
 -r flask.txt
 -r twilio.txt

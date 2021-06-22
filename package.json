@@ -6,7 +6,7 @@
   },
   "dependencies":{
     "bufferutil":"^4.0.3",
-    "@discordjs/opus":"^0.4.0",
+    "@discordjs/opus":"^0.5.3",
     "discord.js":"^12.5.3",
     "discord.js-musicbot-addon":"13.9.1",
     "libsodium-wrappers":"^0.7.8",

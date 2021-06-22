@@ -7,7 +7,7 @@
   "dependencies":{
     "bufferutil":"^4.0.3",
     "discord.js":"^12.5.3",
-    "@discordjs/opus":"^0.4.0",
+    "@discordjs/opus":"^0.5.3",
     "libsodium-wrappers":"^0.7.8",
     "utf-8-validate":"^5.0.4",
     "zlib-sync":"^0.1.7"

@@ -7,37 +7,34 @@
   "buildpacks":[
     {
       "url":"https://github.com/heroku/heroku-buildpack-nodejs"
-    },
-    {
-      "url":"https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
     }
   ],
   "env":{
-    "DISCORD_BOT_INVITE":{
+    "TWITCH_CHANNELS":{
       "description":"",
       "required":"true",
       "value":""
     },
-    "DISCORD_BOT_PREFIX":{
-      "description":"The prefix you want to use with the bot.",
+    "TWITCH_NICK":{
+      "description":"",
       "required":"true",
-      "value":"!"
+      "value":""
     },
-    "DISCORD_BOT_TOKEN":{
-      "description":"Used by discord.js connecting to Discord. This is the bot’s token that you receive from Discord.",
+    "TWITCH_TOKEN":{
+      "description":"",
       "required":"true",
       "value":""
     }
   },
-  "description":"Boilerplate for a Node.js Discord Bot, deploy easily on Heroku",
+  "description":"Boilerplate for a tmi.js Twitch Bot, deploy easily on Heroku",
   "image":"heroku/node-js",
-  "logo":"https://discord.js.org/static/logo.svg",
+  "logo":"https://camo.githubusercontent.com/2aa5f5281e203c07f069d0d257d84b54ea650797e695772e54af57828c323f7c/68747470733a2f2f692e696d6775722e636f6d2f72314e377931632e706e67",
   "keywords":[
-    "discord",
+    "twitch",
     "heroku",
     "node-js"
   ],
-  "name":"discord-js-minimal-heroku-template",
-  "repository":"https://github.com/luissilva1044894/heroku-template/tree/discord.js-minimal",
+  "name":"botTwitch",
+  "repository":"https://github.com/WiniciusAbilio/botTwitch",
   "success_url":"/"
 }
